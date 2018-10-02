@@ -11,7 +11,7 @@ class Register extends Component{
         confirmPassword: { value: '', isValid: true, message: '' }
       };
 
-    state={ ...this.formDefaults}
+    state = { ...this.formDefaults}
 
 
     handleSubmit = (e) =>{
@@ -77,7 +77,6 @@ class Register extends Component{
     }
 
     renderRegistrationForm = () =>{
-
         const { email, password, confirmPassword } = this.state;
         /*
         Each of the group classes below will include the 'form-group' class,
@@ -154,9 +153,9 @@ class Register extends Component{
         );
     }
 
-    render(){
-        return ( 
-            this.renderRegistrationForm()            
+    render = () => {
+        return (        
+          this.renderRegistrationForm()   
         );
     }
 }
